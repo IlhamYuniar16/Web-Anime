@@ -97,10 +97,12 @@
             On-going Anime
           </h2>
 
-          <div v-if="loading" class="text-center py-10">Loading...</div>
+          <div v-if="loading" class="text-center flex justify-center py-10 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 items-center animate-spin"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" /></svg>
+          </div>
           <div v-else class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3 mt-4">
             <div
-              v-for="(item, i) in latestData.slice(0,12)"
+              v-for="(item, i) in latestData"
               :key="i"
               @click="openLatest(item.slug)"
               class="cursor-pointer bg-[#111] border border-gray-700 hover:border-[#00aaff] transition rounded-sm overflow-hidden"
@@ -127,10 +129,12 @@
             Complete Anime
           </h2>
 
-          <div v-if="loading" class="text-center py-10">Loading...</div>
+          <div v-if="loading" class="text-center flex justify-center py-10 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 items-center animate-spin"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" /></svg>
+          </div>
           <div v-else class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3 mt-4">
             <div
-              v-for="(item, i) in recomData.slice(0,12)"
+              v-for="(item, i) in recomData"
               :key="i"
               @click="openAnime(item.slug)"
               class="cursor-pointer bg-[#111] border border-gray-700 hover:border-[#00aaff] transition rounded-sm overflow-hidden"
