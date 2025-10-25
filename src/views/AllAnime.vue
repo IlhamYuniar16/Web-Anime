@@ -64,7 +64,7 @@
     <main class="max-w-6xl mx-auto pt-28 px-3">
       <!-- INFO BOX -->
       <div class="bg-[#00aaff] text-black text-center font-semibold py-2 rounded-sm">
-        Situs resmi <span class="font-bold">LynxxAnime.best</span> — selain dari ini adalah situs palsu.
+        Situs resmi <span class="font-bold"><a href="https://lynxxanime.vercel.app/">LynxxAnime.vercel.app</a></span> — selain dari ini adalah situs palsu.
       </div>
 
       <!-- SECTION: SEARCH RESULTS -->
