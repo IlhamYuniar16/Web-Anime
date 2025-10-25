@@ -97,7 +97,7 @@
             class="flex justify-between items-center px-4 py-2 bg-[#1a1a1a] text-sm border-b border-gray-700 hover:bg-[#222] cursor-pointer"
           >
             <span>{{ ch.eps_title }} Subtitle Indonesia</span>
-            <span class="text-gray-400 text-xs">{{ ch.date || '??' }}</span>
+            <span class="text-gray-400 text-xs">{{ ch.date || 'Selesai' }}</span>
           </div>
         </div>
       </section>
